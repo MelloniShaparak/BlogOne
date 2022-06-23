@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="post-row">
+    {% for post in all_posts %}
+
+       <div class="title">
+          <h1 class="title-text">{{post.title}}</h1>
+       </div>
+
+       <div class="body">
+         <p class="description">{{post.body}}</p>
+       </div>
+
+       <div class="details functions">
+          <i class='fas fa-user user-icon'></i>
+          <p class='author-name'>{{post.author}}</p>
+          <a class='edit-icon' href="{% url 'post_edit' post.pk %}">Edit Post</a>
+          <a class='delete-icon' href="{% url 'post_delete' post.pk %}">Delete Post</a>
+          <button class=' mb-2 btn btn-primary btn-sm' href="{% url 'post_detail' post.pk %}"type="button">READ MORE</button>
+      </div>
+      <p class='post-date'>{{post.created_on|date:"M / d /Y"}}</p>
+      <hr class="my-4" style="width:50%;">
+      {% endfor %}
+
+
+
+</div>
+</div>
+
+{% endblock content %}

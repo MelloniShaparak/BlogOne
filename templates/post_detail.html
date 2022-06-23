@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="post-entry m-4">
+    <h3>{{ object.title }}</h3>
+    <p>{{ object.body }}</p>
+</div>
+<a class='m-3' href="{% url 'home' %}">Back</a>
+{% endblock content %}

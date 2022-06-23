@@ -1,0 +1,88 @@
+body {
+  font-size:16px;
+}
+
+.navbar .new-post {
+  text-decoration: none;
+  color:skyblue;
+  font-weight:800;
+}
+.navbar-brand {
+
+}
+
+.new-post {
+  text-decoration: none;
+}
+.title .title-text {
+  font-size:32px;
+}
+
+.body .description {
+  font-size:16px;
+  font-weight:100;
+}
+.details {
+  display: flex;
+  margin-top:40px;
+}
+
+.details .user-icon {
+  color:gray;
+}
+
+.details .author-name {
+    text-transform: capitalize;
+    font-size:16px;
+    color:silver;
+}
+
+.details .user-icon {
+  margin-right:10px;
+}
+
+.details .author-name {
+  margin-right:40px;
+}
+
+ .post-date {
+  font-size:12px;
+  font-weight:300;
+}
+
+.functions a {
+  text-decoration: none;
+}
+
+.functions .edit-icon {
+  margin-right:10px;
+  font-size:16px;
+  color:skyblue;
+}
+
+.functions .delete-icon {
+  margin-right:10px;
+  font-size:16px;
+  color:skyblue;
+}
+
+.btn-submit{
+  font-weight:800;
+  letter-spacing:1px;
+  height:40px;
+  width:80px;
+  margin-left:210px;
+  padding:5px;
+  text-transform:uppercase;
+  color:skyblue;
+  border:2px solid skyblue;
+}
+.btn-submit:hover {
+  background:skyblue;
+  color:white;
+}
+
+.container .new-post-header {
+  padding-bottom:40px;
+  color:skyblue;
+}
